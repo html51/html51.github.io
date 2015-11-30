@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://yoursite.com/2015/12/01/%E5%B8%B8%E8%A7%81PC%E7%AB%AF%E5%92%8C%E7%A7%BB%E5%8A%A8%E7%AB%AF%E4%BD%BF%E7%94%A8CSS%E5%B1%85%E4%B8%AD/</loc>
+    <lastmod>2015-11-30T16:12:04.000Z</lastmod>
+    <data>
+        <display>
+        <title>常见PC端和移动端使用CSS居中</title>
+        <pubTime>2015-11-30T16:02:45.000Z</pubTime>
+        
+        <tag>css3</tag>
+         
+        <tag>移动</tag>
+         
+        <tag>绝对居中</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+    
+  <url>
+    <loc>http://yoursite.com/2015/11/09/hello-world/</loc>
+    <lastmod>2015-11-09T13:30:30.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2015-11-09T13:30:30.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+</urlset>
