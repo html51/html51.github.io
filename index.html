@@ -43,7 +43,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Niles.Lee Blog" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="Niles.Lee's Blog" type="application/atom+xml" />
 
 
 
@@ -55,15 +55,15 @@
 
 
 
-<meta name="description" content="处女座，一个乐观、对理想有着执着追求的人。">
+<meta name="description" content="Live a good life，一个乐观、对理想有着执着追求的人。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Niles.Lee Blog">
+<meta property="og:title" content="Niles.Lee's Blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Niles.Lee Blog">
-<meta property="og:description" content="处女座，一个乐观、对理想有着执着追求的人。">
+<meta property="og:site_name" content="Niles.Lee's Blog">
+<meta property="og:description" content="Live a good life，一个乐观、对理想有着执着追求的人。">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Niles.Lee Blog">
-<meta name="twitter:description" content="处女座，一个乐观、对理想有着执着追求的人。">
+<meta name="twitter:title" content="Niles.Lee's Blog">
+<meta name="twitter:description" content="Live a good life，一个乐观、对理想有着执着追求的人。">
 
 
 
@@ -75,7 +75,7 @@
   };
 </script>
 
-  <title> Niles.Lee Blog - Niles.Lee Blog - 处女座，一个乐观、对理想有着执着追求的人。 </title>
+  <title> Niles.Lee's Blog - Niles.Lee's Blog - Live a good life，一个乐观、对理想有着执着追求的人。 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -118,11 +118,11 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Niles.Lee Blog</span>
+      <span class="site-title">Niles.Lee's Blog</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle"></p>
+  <p class="site-subtitle">Live a good life</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -221,15 +221,95 @@
 
     
     
+
+    
       
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/12/09/HTML5-CSS3弹出层，适合移动PC/" itemprop="url">
+                  HTML5/CSS3弹出层，适合移动PC
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-12-09T23:12:45+08:00" content="2015-12-09">
+              2015-12-09
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
       
-        
-        
-        
       
 
       
-    
+        
+          <p>随着CSS3的特性越来越完善和标准化，给开发人员在日常的开发过程中带来了非常方便。而且和javascript相比，达到了相同的效果。这次通过CSS3来实现一个弹窗层效果，方便日后再项目的开发中，提高效率。</p>
+<blockquote>
+<ul>
+<li>项目当中经常会有弹出层的需求</li>
+<li>在开发中节约时间</li>
+<li>适合PC移动端，实用性比较强</li>
+</ul>
+</blockquote>
+<h4 id="html"><strong>html</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">title</span>&gt;</span>HTML5/CSS3弹出层，适合移动PC<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- Demo Styles --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"css/demo.css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">&lt;!-- Modal Styles --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"css/modal.css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"container"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">h2</span>&gt;</span>HTML5/CSS3弹出层，适合移动PC<span class="tag">&lt;/<span class="title">h2</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">p</span>&gt;</span>随着CSS3的特性越来越完善和标准化，给开发人员在日常的开发过程中带来了非常方便。而且和javascript相比，达到了相同的效果。这次通过CSS3来实现一个弹窗层效果，方便日后再项目的开发中，提高效率。<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#modal"</span> <span class="attribute">class</span>=<span class="value">"btn go"</span>&gt;</span>快来点我<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"modal"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"modal-content"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"header"</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="title">h2</span>&gt;</span>HTML5/CSS3弹出层，适合移动PC<span class="tag">&lt;/<span class="title">h2</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"copy"</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="title">p</span>&gt;</span>随着CSS3的特性越来越完善和标准化，给开发人员在日常的开发过程中带来了非常方便。而且和javascript相比，达到了相同的效果。这次通过CSS3来实现一个弹窗层效果，方便日后再项目的开发中，提高效率。<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"cf footer"</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"btn"</span>&gt;</span>关闭<span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"overlay"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/12/09/HTML5-CSS3弹出层，适合移动PC/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
 
     
       
@@ -444,11 +524,11 @@
           <img class="site-author-image" src="https://avatars1.githubusercontent.com/u/32269?v=3&s=460" alt="Niles.Lee" itemprop="image"/>
           <p class="site-author-name" itemprop="name">Niles.Lee</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">处女座，一个乐观、对理想有着执着追求的人。</p>
+        <p class="site-description motion-element" itemprop="description">Live a good life，一个乐观、对理想有着执着追求的人。</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -462,7 +542,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
