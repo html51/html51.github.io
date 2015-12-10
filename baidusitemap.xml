@@ -4,6 +4,52 @@
 
     
   <url>
+    <loc>http://yoursite.com/2015/12/01/%E5%B8%B8%E8%A7%81PC%E7%AB%AF%E5%92%8C%E7%A7%BB%E5%8A%A8%E7%AB%AF%E4%BD%BF%E7%94%A8CSS%E5%B1%85%E4%B8%AD/</loc>
+    <lastmod>2015-12-10T14:06:27.000Z</lastmod>
+    <data>
+        <display>
+        <title>常见PC端和移动端使用CSS居中</title>
+        <pubTime>2015-11-30T16:02:45.000Z</pubTime>
+        
+        <tag>css3</tag>
+         
+        <tag>移动</tag>
+         
+        <tag>绝对居中</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2015/12/10/CSS3%E5%B8%A6%E5%BF%83%E8%B7%B3%E6%B5%AE%E5%8A%A8%E5%9B%BA%E5%AE%9A%E6%8C%89%E9%92%AE/</loc>
+    <lastmod>2015-12-10T14:04:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3带心跳浮动固定按钮</title>
+        <pubTime>2015-12-10T15:12:45.000Z</pubTime>
+        
+        <tag>HTML5</tag>
+         
+        <tag>css3</tag>
+         
+        <tag>固定按钮</tag>
+         
+        <tag>浮动</tag>
+         
+        <tag>移动</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2015/12/09/HTML5-CSS3%E5%BC%B9%E5%87%BA%E5%B1%82%EF%BC%8C%E9%80%82%E5%90%88%E7%A7%BB%E5%8A%A8PC/</loc>
     <lastmod>2015-12-09T15:12:11.000Z</lastmod>
     <data>
@@ -18,27 +64,6 @@
         <tag>弹出层</tag>
          
         <tag>移动</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2015/12/01/%E5%B8%B8%E8%A7%81PC%E7%AB%AF%E5%92%8C%E7%A7%BB%E5%8A%A8%E7%AB%AF%E4%BD%BF%E7%94%A8CSS%E5%B1%85%E4%B8%AD/</loc>
-    <lastmod>2015-11-30T16:12:04.000Z</lastmod>
-    <data>
-        <display>
-        <title>常见PC端和移动端使用CSS居中</title>
-        <pubTime>2015-11-30T16:02:45.000Z</pubTime>
-        
-        <tag>css3</tag>
-         
-        <tag>移动</tag>
-         
-        <tag>绝对居中</tag>
          
          
            
