@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://yoursite.com/2015/12/12/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E7%9A%84CSS3%20Media%20Queries%E4%B9%8BSamsung%20Galaxy/</loc>
-    <lastmod>2015-12-12T13:49:49.000Z</lastmod>
+    <lastmod>2015-12-12T17:04:09.000Z</lastmod>
     <data>
         <display>
         <title>移动设备的CSS3 Media Queries之Samsung Galaxy</title>
@@ -13,14 +13,17 @@
         
         <tag>Media Queries</tag>
          
-        <tag>Samsung Galaxy</tag>
-         
         <tag>css3</tag>
          
         <tag>移动</tag>
          
+        <tag>Samsung Galaxy</tag>
+         
          
            
+             
+              <breadCrumb title="CSS3" url="http://yoursite.com/categories/CSS3/"/>
+          
         </display>
     </data>
     </url>
@@ -28,7 +31,7 @@
     
   <url>
     <loc>http://yoursite.com/2015/12/01/%E5%B8%B8%E8%A7%81PC%E7%AB%AF%E5%92%8C%E7%A7%BB%E5%8A%A8%E7%AB%AF%E4%BD%BF%E7%94%A8CSS%E5%B1%85%E4%B8%AD/</loc>
-    <lastmod>2015-12-10T14:06:27.000Z</lastmod>
+    <lastmod>2015-12-12T17:04:07.000Z</lastmod>
     <data>
         <display>
         <title>常见PC端和移动端使用CSS居中</title>
@@ -42,31 +45,9 @@
          
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2015/12/10/CSS3%E5%B8%A6%E5%BF%83%E8%B7%B3%E6%B5%AE%E5%8A%A8%E5%9B%BA%E5%AE%9A%E6%8C%89%E9%92%AE/</loc>
-    <lastmod>2015-12-10T14:04:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>CSS3带心跳浮动固定按钮</title>
-        <pubTime>2015-12-10T15:12:45.000Z</pubTime>
-        
-        <tag>HTML5</tag>
-         
-        <tag>css3</tag>
-         
-        <tag>固定按钮</tag>
-         
-        <tag>浮动</tag>
-         
-        <tag>移动</tag>
-         
-         
-           
+             
+              <breadCrumb title="CSS3" url="http://yoursite.com/categories/CSS3/"/>
+          
         </display>
     </data>
     </url>
@@ -74,43 +55,59 @@
     
   <url>
     <loc>http://yoursite.com/2015/12/09/HTML5-CSS3%E5%BC%B9%E5%87%BA%E5%B1%82%EF%BC%8C%E9%80%82%E5%90%88%E7%A7%BB%E5%8A%A8PC/</loc>
-    <lastmod>2015-12-09T15:12:11.000Z</lastmod>
+    <lastmod>2015-12-12T17:03:49.000Z</lastmod>
     <data>
         <display>
         <title>HTML5/CSS3弹出层，适合移动PC</title>
         <pubTime>2015-12-09T15:12:45.000Z</pubTime>
         
-        <tag>HTML5</tag>
-         
         <tag>css3</tag>
-         
-        <tag>弹出层</tag>
          
         <tag>移动</tag>
          
+        <tag>HTML5</tag>
+         
+        <tag>弹出层</tag>
+         
          
            
+             
+              <breadCrumb title="HTML5" url="http://yoursite.com/categories/HTML5/"/>
+          
         </display>
     </data>
     </url>
 
-    
-    
-    
-    
     
   <url>
-    <loc>http://yoursite.com/2015/11/09/hello-world/</loc>
-    <lastmod>2015-11-09T13:30:30.000Z</lastmod>
+    <loc>http://yoursite.com/2015/12/10/CSS3%E5%B8%A6%E5%BF%83%E8%B7%B3%E6%B5%AE%E5%8A%A8%E5%9B%BA%E5%AE%9A%E6%8C%89%E9%92%AE/</loc>
+    <lastmod>2015-12-12T15:32:17.000Z</lastmod>
     <data>
         <display>
-        <title>Hello World</title>
-        <pubTime>2015-11-09T13:30:30.000Z</pubTime>
+        <title>CSS3带心跳浮动固定按钮</title>
+        <pubTime>2015-12-10T15:12:45.000Z</pubTime>
         
+        <tag>css3</tag>
+         
+        <tag>移动</tag>
+         
+        <tag>HTML5</tag>
+         
+        <tag>固定按钮</tag>
+         
+        <tag>浮动</tag>
+         
          
            
+             
+              <breadCrumb title="CSS3" url="http://yoursite.com/categories/CSS3/"/>
+          
         </display>
     </data>
     </url>
 
+    
+    
+    
+    
 </urlset>
