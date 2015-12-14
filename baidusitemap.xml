@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>http://yoursite.com/2015/12/14/jquery%E9%94%9A%E7%82%B9%E5%B8%A6%E5%8A%A8%E7%94%BB%E8%B7%B3%E8%BD%AC%EF%BC%8C%E5%8F%B3%E4%BE%A7%E5%AF%BC%E8%88%AA%E7%82%B9%E5%87%BB%E5%AF%B9%E5%BA%94%E4%B8%BB%E5%86%85%E5%AE%B9%E6%A5%BC%E5%B1%82%E5%AE%9E%E8%B7%B5/</loc>
+    <lastmod>2015-12-14T12:23:30.000Z</lastmod>
+    <data>
+        <display>
+        <title>jquery锚点带动画跳转，右侧导航点击对应主内容楼层实践</title>
+        <pubTime>2015-12-14T12:20:45.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>css</tag>
+         
+        <tag>jquery</tag>
+         
+        <tag>右侧导航</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://yoursite.com/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2015/12/12/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E7%9A%84CSS3%20Media%20Queries%E4%B9%8BSamsung%20Galaxy/</loc>
     <lastmod>2015-12-12T17:04:09.000Z</lastmod>
     <data>
@@ -11,11 +37,11 @@
         <title>移动设备的CSS3 Media Queries之Samsung Galaxy</title>
         <pubTime>2015-12-12T13:32:45.000Z</pubTime>
         
-        <tag>Media Queries</tag>
-         
         <tag>css3</tag>
          
         <tag>移动</tag>
+         
+        <tag>Media Queries</tag>
          
         <tag>Samsung Galaxy</tag>
          
@@ -61,11 +87,11 @@
         <title>HTML5/CSS3弹出层，适合移动PC</title>
         <pubTime>2015-12-09T15:12:45.000Z</pubTime>
         
+        <tag>HTML5</tag>
+         
         <tag>css3</tag>
          
         <tag>移动</tag>
-         
-        <tag>HTML5</tag>
          
         <tag>弹出层</tag>
          
@@ -87,11 +113,11 @@
         <title>CSS3带心跳浮动固定按钮</title>
         <pubTime>2015-12-10T15:12:45.000Z</pubTime>
         
+        <tag>HTML5</tag>
+         
         <tag>css3</tag>
          
         <tag>移动</tag>
-         
-        <tag>HTML5</tag>
          
         <tag>固定按钮</tag>
          
