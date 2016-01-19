@@ -209,6 +209,317 @@
 
     
     
+      
+      
+
+      
+    
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/12/15/移动设备的CSS3 Media Queries之常用显示器和移动设备/" itemprop="url">
+                  移动设备的CSS3 Media Queries之常用显示器和移动设备
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-12-15T21:50:45+08:00" content="2015-12-15">
+              2015-12-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/CSS3/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS3</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>随着Web响应式的趋势越来越流行，媒体查询在创建响应式网站中起到了主要作用。利用媒体查询，我们可以针对不同的设备，如显示器、智能手机和平板，来写CSS。在这里我把常用的媒体查询进行了分类总结，希望在以后的工作当中方便查阅。这篇主要是对常用显示器和移动设备进行了总结。</p>
+</blockquote>
+<h3 id="显示器媒体查询">显示器媒体查询</h3><h4 id="640px"><strong>640px</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (max-width: <span class="number">640</span>px) &#123; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="800px"><strong>800px</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (max-width: <span class="number">800</span>px) &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="1024px"><strong>1024px</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (max-width: <span class="number">1024</span>px) &#123; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="HTC_Evo，BlackBerry_Torch，HTC_Thunderbolt，HD2"><strong>HTC Evo，BlackBerry Torch，HTC Thunderbolt，HD2</strong></h4><figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">@media</span> screen <span class="literal">and</span> (<span class="built_in">max</span>-device-width: <span class="number">480</span>px) </span><br><span class="line">&#123; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="平板媒体查询">平板媒体查询</h3><h4 id="Motorola_Xoom"><strong>Motorola Xoom</strong></h4><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* Landscape Mode */</span></span><br><span class="line"><span class="meta">@media</span> (max-device-<span class="string">width:</span> <span class="number">1280</span>px) and (<span class="string">orientation:</span> landscape) </span><br><span class="line">&#123; </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Portrait Mode */</span></span><br><span class="line"><span class="meta">@media</span> (max-device-<span class="string">width:</span> <span class="number">800</span>px) and (<span class="string">orientation:</span> portrait) </span><br><span class="line">&#123; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="HTC_Flyer"><strong>HTC Flyer</strong></h4><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* Landscape Mode */</span></span><br><span class="line"><span class="meta">@media</span> (max-device-<span class="string">width:</span> <span class="number">1024</span>px) and (<span class="string">orientation:</span> landscape) </span><br><span class="line">&#123; </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Portrait Mode */</span></span><br><span class="line"><span class="meta">@media</span> (max-device-<span class="string">width:</span> <span class="number">600</span>px) and (<span class="string">orientation:</span> portrait) </span><br><span class="line">&#123; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/12/15/移动设备的CSS3 Media Queries之常用显示器和移动设备/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/12/15/手机端访问PC端页面检测弹窗，并记录cookie/" itemprop="url">
+                  手机端访问PC端页面检测弹窗，并记录cookie
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-12-15T20:10:45+08:00" content="2015-12-15">
+              2015-12-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>主要的需求是用户使用手机访问PC端页面，这个时候告诉用户是否继续留在PC端页面，还是直接跳转到手机端页面进行访问。点击按钮的过程中，并记录cookie，有效时间一天。</p>
+</blockquote>
+<h4 id="html"><strong>html</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--S popupbox--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"popup-bg"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"popup-box"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"popup-inner"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"epopup-main"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"epopup-bd"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Enter into Mobile Version?<span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"epopup-btn-group"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">data-role</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"epopup-btn epopup-btn-ok"</span>&gt;</span>Yes<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">data-role</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"epopup-btn epopup-btn-cancel"</span>&gt;</span>No<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--E epopup-main--&gt;</span></span><br><span class="line">        </span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--E popupbox--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/12/15/手机端访问PC端页面检测弹窗，并记录cookie/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/12/14/jquery锚点带动画跳转，右侧导航点击对应主内容楼层实践/" itemprop="url">
+                  jquery锚点带动画跳转，右侧导航点击对应主内容楼层实践
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-12-14T20:20:45+08:00" content="2015-12-14">
+              2015-12-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>圣诞节活动，做了一个右侧导航点击和主内容的楼层进行对应。实现过程中遇到了一点小问题，每次点击，都会触发滚动，所以总结一下，希望以后的项目也有所帮助</p>
+<ul>
+<li>锚点链接实现</li>
+<li>滚动效果的实现</li>
+</ul>
+</blockquote>
+<h4 id="html"><strong>html</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>项目当中右侧导航与主内容楼层实践<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- Demo Styles --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"css/demo.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--S main--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">    		<span class="comment">&lt;!--S layer1--&gt;</span>	</span><br><span class="line">    		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"layer1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    		<span class="comment">&lt;!--S layer2--&gt;</span>	</span><br><span class="line">    		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"layer2"</span> <span class="attr">id</span>=<span class="string">"002"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    		<span class="comment">&lt;!--S layer1--&gt;</span>	</span><br><span class="line">    		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"layer3"</span> <span class="attr">id</span>=<span class="string">"003"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    		<span class="comment">&lt;!--S layer1--&gt;</span>	</span><br><span class="line">    		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"layer4"</span> <span class="attr">id</span>=<span class="string">"004"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    		<span class="comment">&lt;!--S layer1--&gt;</span>	</span><br><span class="line">    		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"layer5"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"float"</span>&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        		<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#002"</span> <span class="attr">class</span>=<span class="string">"md2"</span> <span class="attr">title</span>=<span class="string">"Lucky Draw"</span>&gt;</span>Lucky Draw<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        		<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#003"</span> <span class="attr">class</span>=<span class="string">"md3"</span> <span class="attr">title</span>=<span class="string">"Free Shipping"</span>&gt;</span>Free Shipping<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        		<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#004"</span> <span class="attr">class</span>=<span class="string">"md4"</span> <span class="attr">title</span>=<span class="string">"Discount Off"</span>&gt;</span>Discount Off<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        		<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:void(0);"</span> <span class="attr">class</span>=<span class="string">"md_backtop"</span> <span class="attr">title</span>=<span class="string">"返回顶部"</span>&gt;</span>返回顶部<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        	<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/12/14/jquery锚点带动画跳转，右侧导航点击对应主内容楼层实践/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
 
     
       
@@ -411,216 +722,12 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/12/09/HTML5-CSS3弹出层，适合移动PC/" itemprop="url">
-                  HTML5/CSS3弹出层，适合移动PC
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-12-09T23:12:45+08:00" content="2015-12-09">
-              2015-12-09
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/HTML5/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML5</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>随着CSS3的特性越来越完善和标准化，给开发人员在日常的开发过程中带来了非常方便。而且和javascript相比，达到了相同的效果。这次通过CSS3来实现一个弹窗层效果，方便日后再项目的开发中，提高效率。</p>
-<blockquote>
-<ul>
-<li>项目当中经常会有弹出层的需求</li>
-<li>在开发中节约时间</li>
-<li>适合PC移动端，实用性比较强</li>
-</ul>
-</blockquote>
-<h4 id="html"><strong>html</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang="en"&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset="utf-8"&gt;</span><br><span class="line">	&lt;title&gt;HTML5/CSS3弹出层，适合移动PC&lt;/title&gt;</span><br><span class="line">	&lt;!-- Demo Styles --&gt;</span><br><span class="line">	&lt;link href="css/demo.css" rel="stylesheet"&gt;</span><br><span class="line"></span><br><span class="line">	&lt;!-- Modal Styles --&gt;</span><br><span class="line">	&lt;link href="css/modal.css" rel="stylesheet"&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;div class="container"&gt;</span><br><span class="line">		&lt;h2&gt;HTML5/CSS3弹出层，适合移动PC&lt;/h2&gt;</span><br><span class="line">		&lt;p&gt;随着CSS3的特性越来越完善和标准化，给开发人员在日常的开发过程中带来了非常方便。而且和javascript相比，达到了相同的效果。这次通过CSS3来实现一个弹窗层效果，方便日后再项目的开发中，提高效率。&lt;/p&gt;</span><br><span class="line">		&lt;p&gt;&lt;a href="#modal" class="btn go"&gt;快来点我&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">	&lt;div id="modal"&gt;</span><br><span class="line">		&lt;div class="modal-content"&gt;</span><br><span class="line">			&lt;div class="header"&gt;</span><br><span class="line">				&lt;h2&gt;HTML5/CSS3弹出层，适合移动PC&lt;/h2&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">			&lt;div class="copy"&gt;</span><br><span class="line">				&lt;p&gt;随着CSS3的特性越来越完善和标准化，给开发人员在日常的开发过程中带来了非常方便。而且和javascript相比，达到了相同的效果。这次通过CSS3来实现一个弹窗层效果，方便日后再项目的开发中，提高效率。&lt;/p&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">			&lt;div class="cf footer"&gt;</span><br><span class="line">				&lt;a href="#" class="btn"&gt;关闭&lt;/a&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="overlay"&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/09/HTML5-CSS3弹出层，适合移动PC/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/12/01/常见PC端和移动端使用CSS居中/" itemprop="url">
-                  常见PC端和移动端使用CSS居中
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-12-01T00:02:45+08:00" content="2015-12-01">
-              2015-12-01
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/CSS3/" itemprop="url" rel="index">
-                    <span itemprop="name">CSS3</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h4 id="1-使用负margin值来进行居中"><strong>1.使用负margin值来进行居中</strong></h4><blockquote>
-<p>此方法特别适合PC端，例如简单的弹出层。一般设置固定的宽度和高度，然后配合一半大小的负margin值，另外还需要left:50%，top:50%，这样就可以在页面居中啦~</p>
-</blockquote>
-<h4 id="html"><strong>html</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"container"</span>&gt;</span><br><span class="line">  &lt;div class="box-center box-absolute"&gt;</span><br><span class="line">    &lt;h4 class="title"&gt;使用负margin值来进行居中&lt;/h4&gt;</span><br><span class="line">    &lt;p&gt;此方法特别适合PC端，一般设置固定的宽度和高度，然后配合一半大小的负margin值，另外还需要left:50%，top:50%，这样就可以在页面居中啦~&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="css"><strong>css</strong></h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">.container&#123;</span><br><span class="line">  background: #eee;</span><br><span class="line">  color: #4fa46b;</span><br><span class="line">  width: 100%;</span><br><span class="line">  height: 400px;</span><br><span class="line">  margin: 20px auto 40px;</span><br><span class="line">  position:relative;</span><br><span class="line">&#125;</span><br><span class="line">.box-center.box-absolute&#123;</span><br><span class="line">  width: 300px;</span><br><span class="line">  height: 200px;</span><br><span class="line">  padding: 20px;</span><br><span class="line">  position: absolute;</span><br><span class="line">  top: 50%;</span><br><span class="line">  left: 50%;</span><br><span class="line">  margin-left: -170px;</span><br><span class="line">  /* (width + padding)/2 */</span><br><span class="line">  margin-top: -120px;</span><br><span class="line">  /* (height + padding)/2 */</span><br><span class="line">&#125;</span><br><span class="line">.container .box-center&#123;</span><br><span class="line">  background: #BBB;</span><br><span class="line">&#125;</span><br><span class="line">.box-center .title &#123;</span><br><span class="line">  padding: 0;</span><br><span class="line">  margin: 0 0 .5em;</span><br><span class="line">  line-height: 1em;</span><br><span class="line">&#125;</span><br><span class="line">.box-center&#123;</span><br><span class="line">  color:#fff;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/01/常见PC端和移动端使用CSS居中/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -661,21 +768,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">分类</span>
               
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">25</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
