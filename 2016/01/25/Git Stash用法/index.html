@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="CSS3,csssecrets," />
+  <meta name="keywords" content="GIT," />
 
 
 
@@ -53,19 +53,22 @@
 
 
 
-<meta name="description" content="HTML1&amp;lt;div class=&quot;pie&quot;&amp;gt;&amp;lt;/div&amp;gt;
-CSS1234567891011121314151617181920212223242526272829/** * Animated pie chart */.pie &amp;#123;	width: 100px; height: 100px;	border-radius: 50%;	background: yellowg">
+<meta name="description" content="git stash：备份当前的工作区的内容，从最近的一次提交中读取相关内容，让工作区保证和上次提交的内容一致。同时，将当前的工作区内容保存到Git栈中。
+git stash pop：从Git栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个Stash的内容，所以用栈来管理，pop会从最近的一个stash中读取内容并恢复。
+git stash list：显示Git栈内的所有备份，可以">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Animated pie chart">
-<meta property="og:url" content="http://yoursite.com/2016/01/21/Animated pie chart/index.html">
+<meta property="og:title" content="Git Stash用法">
+<meta property="og:url" content="http://yoursite.com/2016/01/25/Git Stash用法/index.html">
 <meta property="og:site_name" content="Niles.Lee's Blog">
-<meta property="og:description" content="HTML1&amp;lt;div class=&quot;pie&quot;&amp;gt;&amp;lt;/div&amp;gt;
-CSS1234567891011121314151617181920212223242526272829/** * Animated pie chart */.pie &amp;#123;	width: 100px; height: 100px;	border-radius: 50%;	background: yellowg">
-<meta property="og:updated_time" content="2016-01-21T14:47:24.818Z">
+<meta property="og:description" content="git stash：备份当前的工作区的内容，从最近的一次提交中读取相关内容，让工作区保证和上次提交的内容一致。同时，将当前的工作区内容保存到Git栈中。
+git stash pop：从Git栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个Stash的内容，所以用栈来管理，pop会从最近的一个stash中读取内容并恢复。
+git stash list：显示Git栈内的所有备份，可以">
+<meta property="og:updated_time" content="2016-01-25T16:14:49.498Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Animated pie chart">
-<meta name="twitter:description" content="HTML1&amp;lt;div class=&quot;pie&quot;&amp;gt;&amp;lt;/div&amp;gt;
-CSS1234567891011121314151617181920212223242526272829/** * Animated pie chart */.pie &amp;#123;	width: 100px; height: 100px;	border-radius: 50%;	background: yellowg">
+<meta name="twitter:title" content="Git Stash用法">
+<meta name="twitter:description" content="git stash：备份当前的工作区的内容，从最近的一次提交中读取相关内容，让工作区保证和上次提交的内容一致。同时，将当前的工作区内容保存到Git栈中。
+git stash pop：从Git栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个Stash的内容，所以用栈来管理，pop会从最近的一个stash中读取内容并恢复。
+git stash list：显示Git栈内的所有备份，可以">
 
 
 
@@ -77,7 +80,7 @@ CSS1234567891011121314151617181920212223242526272829/** * Animated pie chart */.
   };
 </script>
 
-  <title> Animated pie chart | Niles.Lee's Blog </title>
+  <title> Git Stash用法 | Niles.Lee's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -227,7 +230,7 @@ CSS1234567891011121314151617181920212223242526272829/** * Animated pie chart */.
             
             
               
-                Animated pie chart
+                Git Stash用法
               
             
           </h1>
@@ -236,8 +239,8 @@ CSS1234567891011121314151617181920212223242526272829/** * Animated pie chart */.
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-01-21T21:13:45+08:00" content="2016-01-21">
-              2016-01-21
+            <time itemprop="dateCreated" datetime="2016-01-25T21:13:45+08:00" content="2016-01-25">
+              2016-01-25
             </time>
           </span>
 
@@ -246,8 +249,8 @@ CSS1234567891011121314151617181920212223242526272829/** * Animated pie chart */.
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/csssecrets/" itemprop="url" rel="index">
-                    <span itemprop="name">csssecrets</span>
+                  <a href="/categories/GIT/" itemprop="url" rel="index">
+                    <span itemprop="name">GIT</span>
                   </a>
                 </span>
 
@@ -275,8 +278,20 @@ CSS1234567891011121314151617181920212223242526272829/** * Animated pie chart */.
       
 
       
-        <span itemprop="articleBody"><h4 id="HTML"><strong>HTML</strong></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"pie"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="CSS"><strong>CSS</strong></h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * Animated pie chart</span><br><span class="line"> */</span></span><br><span class="line"></span><br><span class="line"><span class="selector-class">.pie</span> &#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100px</span>; <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">background</span>: yellowgreen;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(to right, transparent <span class="number">50%</span>, currentColor <span class="number">0</span>);</span><br><span class="line">	<span class="attribute">color</span>: <span class="number">#655</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.pie</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">	<span class="attribute">display</span>: block;</span><br><span class="line">	<span class="attribute">margin-left</span>: <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">0</span> <span class="number">100%</span> <span class="number">100%</span> <span class="number">0</span> / <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">background-color</span>: inherit;</span><br><span class="line">	<span class="attribute">transform-origin</span>: left;</span><br><span class="line">	<span class="attribute">animation</span>: spin <span class="number">3s</span> linear infinite, bg <span class="number">6s</span> step-end infinite;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@<span class="keyword">keyframes</span> spin &#123;</span><br><span class="line">	<span class="selector-tag">to</span> &#123; <span class="attribute">transform</span>: <span class="built_in">rotate</span>(.<span class="number">5turn</span>); &#125;</span><br><span class="line">&#125;</span><br><span class="line">@<span class="keyword">keyframes</span> bg &#123;</span><br><span class="line">	50% &#123; <span class="attribute">background</span>: currentColor; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <span itemprop="articleBody"><blockquote>
+<ul>
+<li><strong>git stash</strong>：备份当前的工作区的内容，从最近的一次提交中读取相关内容，让工作区保证和上次提交的内容一致。同时，将当前的工作区内容保存到Git栈中。</li>
+<li><strong>git stash pop</strong>：从Git栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个Stash的内容，所以用栈来管理，pop会从最近的一个stash中读取内容并恢复。</li>
+<li><strong>git stash list</strong>：显示Git栈内的所有备份，可以利用这个列表来决定从那个地方恢复。</li>
+<li><strong>git stash clear</strong>：清空Git栈。</li>
+</ul>
+</blockquote>
+<h4 id="Git_Stash用法操作流程–暂存分支"><strong>Git Stash用法操作流程–暂存分支</strong></h4><blockquote>
+<p>这里的分支自己根据项目的实际情况来操作，所以知道流程才是主要的。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git status                      ###查看分支状态，当前状态是正在修改的分支，可以看到修改过的文件</span><br><span class="line">                                ###当前分支为：@newdevelop</span><br><span class="line">git stash                       ###暂存当前正在修改的分支</span><br><span class="line">git status                      ###查看分支状态，当前分支修改过的文件没有了</span><br><span class="line">git checkout develop            ###切换马上修改的新分支</span><br><span class="line">git status                      ###查看马上修改的分支状态</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h4 id="Git_Stash用法操作流程–恢复暂存分支"><strong>Git Stash用法操作流程–恢复暂存分支</strong></h4><blockquote>
+<p>bug修复之后，现在我们切换到newdevelop分支继续上次修改<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git checkout newdevelop         ###切换到上次修改的分支继续修改文件</span><br><span class="line">git status                      ###查看当前分支状态，可以看到修改过的文件，并没有出现，接下来要恢复暂存分支</span><br><span class="line">git stash pop                   ###恢复暂存分支</span><br><span class="line">git status                      ###查看当前分支状态，出现了上次修改过的文件，，接下我们就可以继续修改当前分支了</span><br></pre></td></tr></table></figure></p>
+</blockquote>
 </span>
       
     </div>
@@ -285,9 +300,7 @@ CSS1234567891011121314151617181920212223242526272829/** * Animated pie chart */.
       
         <div class="post-tags">
           
-            <a href="/tags/CSS3/" rel="tag">#CSS3</a>
-          
-            <a href="/tags/csssecrets/" rel="tag">#csssecrets</a>
+            <a href="/tags/GIT/" rel="tag">#GIT</a>
           
         </div>
       
@@ -296,17 +309,13 @@ CSS1234567891011121314151617181920212223242526272829/** * Animated pie chart */.
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/20/Elastic transitions/" rel="next" title="Elastic transitions">
-                <i class="fa fa-chevron-left"></i> Elastic transitions
+              <a href="/2016/01/21/Animation along a circular path - Solution 1/" rel="next" title="Animation along a circular path - Solution 1">
+                <i class="fa fa-chevron-left"></i> Animation along a circular path - Solution 1
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/21/Animation along a circular path - Solution 1/" rel="prev" title="Animation along a circular path - Solution 1">
-                Animation along a circular path - Solution 1 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -437,7 +446,7 @@ CSS1234567891011121314151617181920212223242526272829/** * Animated pie chart */.
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#HTML"><span class="nav-number">1.</span> <span class="nav-text">HTML</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS"><span class="nav-number">2.</span> <span class="nav-text">CSS</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Git_Stash用法操作流程–暂存分支"><span class="nav-number">1.</span> <span class="nav-text">Git Stash用法操作流程–暂存分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Git_Stash用法操作流程–恢复暂存分支"><span class="nav-number">2.</span> <span class="nav-text">Git Stash用法操作流程–恢复暂存分支</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

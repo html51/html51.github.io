@@ -232,6 +232,115 @@
             
               
                 
+                <a class="post-title-link" href="/2016/01/25/Git Stash用法/" itemprop="url">
+                  Git Stash用法
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-01-25T21:13:45+08:00" content="2016-01-25">
+              2016-01-25
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/GIT/" itemprop="url" rel="index">
+                    <span itemprop="name">GIT</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <blockquote>
+<ul>
+<li><strong>git stash</strong>：备份当前的工作区的内容，从最近的一次提交中读取相关内容，让工作区保证和上次提交的内容一致。同时，将当前的工作区内容保存到Git栈中。</li>
+<li><strong>git stash pop</strong>：从Git栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个Stash的内容，所以用栈来管理，pop会从最近的一个stash中读取内容并恢复。</li>
+<li><strong>git stash list</strong>：显示Git栈内的所有备份，可以利用这个列表来决定从那个地方恢复。</li>
+<li><strong>git stash clear</strong>：清空Git栈。</li>
+</ul>
+</blockquote>
+<h4 id="Git_Stash用法操作流程–暂存分支"><strong>Git Stash用法操作流程–暂存分支</strong></h4><blockquote>
+<p>这里的分支自己根据项目的实际情况来操作，所以知道流程才是主要的。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git status                      ###查看分支状态，当前状态是正在修改的分支，可以看到修改过的文件</span><br><span class="line">                                ###当前分支为：@newdevelop</span><br><span class="line">git stash                       ###暂存当前正在修改的分支</span><br><span class="line">git status                      ###查看分支状态，当前分支修改过的文件没有了</span><br><span class="line">git checkout develop            ###切换马上修改的新分支</span><br><span class="line">git status                      ###查看马上修改的分支状态</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h4 id="Git_Stash用法操作流程–恢复暂存分支"><strong>Git Stash用法操作流程–恢复暂存分支</strong></h4><blockquote>
+<p>bug修复之后，现在我们切换到newdevelop分支继续上次修改<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git checkout newdevelop         ###切换到上次修改的分支继续修改文件</span><br><span class="line">git status                      ###查看当前分支状态，可以看到修改过的文件，并没有出现，接下来要恢复暂存分支</span><br><span class="line">git stash pop                   ###恢复暂存分支</span><br><span class="line">git status                      ###查看当前分支状态，出现了上次修改过的文件，，接下我们就可以继续修改当前分支了</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/01/21/Animation along a circular path - Solution 1/" itemprop="url">
                   Animation along a circular path - Solution 1
                 </a>
@@ -597,102 +706,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/01/20/Adjusting tabs/" itemprop="url">
-                  Adjusting tabs
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2016-01-20T21:03:45+08:00" content="2016-01-20">
-              2016-01-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/csssecrets/" itemprop="url" rel="index">
-                    <span itemprop="name">csssecrets</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h4 id="HTML"><strong>HTML</strong></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span>&gt;</span>// Default tab size</span><br><span class="line">while (true) &#123;</span><br><span class="line">	var d = new Date();</span><br><span class="line">	if (d.getDate()==1 &amp;amp;&amp;amp;</span><br><span class="line">	    d.getMonth()==3) &#123;</span><br><span class="line">		alert("TROLOLOL");</span><br><span class="line">	&#125;</span><br><span class="line">&#125;<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span>&gt;</span>// tab-size: 2;</span><br><span class="line">while (true) &#123;</span><br><span class="line">	var d = new Date();</span><br><span class="line">	if (d.getDate()==1 &amp;amp;&amp;amp;</span><br><span class="line">	    d.getMonth()==3) &#123;</span><br><span class="line">		alert("TROLOLOL");</span><br><span class="line">	&#125;</span><br><span class="line">&#125;<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span>&gt;</span>// tab-size: 4;</span><br><span class="line">while (true) &#123;</span><br><span class="line">	var d = new Date();</span><br><span class="line">	if (d.getDate()==1 &amp;amp;&amp;amp;</span><br><span class="line">	    d.getMonth()==3) &#123;</span><br><span class="line">		alert("TROLOLOL");</span><br><span class="line">	&#125;</span><br><span class="line">&#125;<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span>&gt;</span>// tab-size: 0;</span><br><span class="line">while (true) &#123;</span><br><span class="line">	var d = new Date();</span><br><span class="line">	if (d.getDate()==1 &amp;amp;&amp;amp;</span><br><span class="line">	    d.getMonth()==3) &#123;</span><br><span class="line">		alert("TROLOLOL");</span><br><span class="line">	&#125;</span><br><span class="line">&#125;<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/20/Adjusting tabs/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
@@ -739,21 +752,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-count">19</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">分类</span>
               
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">27</span>
+              <span class="site-state-item-count">28</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
