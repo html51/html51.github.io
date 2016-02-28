@@ -1,5 +1,11 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -32,7 +38,7 @@
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="css3,移动,绝对居中," />
@@ -46,7 +52,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
 
 
 
@@ -76,10 +82,16 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: 'post',
-    motion: true
+    scheme: 'Pisces',
+    sidebar: '[object Object]',
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
@@ -88,15 +100,6 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
@@ -114,7 +117,12 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
 
 
 
-  <div class="container one-column page-post-detail">
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -198,6 +206,7 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
 
       
       
+      
     </ul>
   
 
@@ -209,8 +218,9 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
@@ -241,7 +251,10 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2015-12-01T00:02:45+08:00" content="2015-12-01">
               2015-12-01
             </time>
@@ -249,7 +262,11 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/CSS3/" itemprop="url" rel="index">
@@ -270,18 +287,20 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
 
           
 
+          
+          
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <span itemprop="articleBody"><h4 id="1-使用负margin值来进行居中"><strong>1.使用负margin值来进行居中</strong></h4><blockquote>
+        <h4 id="1-使用负margin值来进行居中"><strong>1.使用负margin值来进行居中</strong></h4><blockquote>
 <p>此方法特别适合PC端，例如简单的弹出层。一般设置固定的宽度和高度，然后配合一半大小的负margin值，另外还需要left:50%，top:50%，这样就可以在页面居中啦~</p>
 </blockquote>
 <h4 id="html"><strong>html</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"container"</span>&gt;</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box-center box-absolute"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h4</span> <span class="attr">class</span>=<span class="string">"title"</span>&gt;</span>使用负margin值来进行居中<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>此方法特别适合PC端，一般设置固定的宽度和高度，然后配合一半大小的负margin值，另外还需要left:50%，top:50%，这样就可以在页面居中啦~<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
@@ -314,7 +333,7 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
 <h4 id="css-5"><strong>css</strong></h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">.container&#123;</span><br><span class="line">  background: #eee;</span><br><span class="line">  color: #4fa46b;</span><br><span class="line">  width: 100%;</span><br><span class="line">  height: 400px;</span><br><span class="line">  margin: 20px auto 40px;</span><br><span class="line">  position:relative;</span><br><span class="line">&#125;</span><br><span class="line">.container.box-table &#123;</span><br><span class="line">  display: table;</span><br><span class="line">&#125;</span><br><span class="line">.box-table .box-tablecell &#123;</span><br><span class="line">  display: table-cell;</span><br><span class="line">  vertical-align: middle;</span><br><span class="line">&#125;</span><br><span class="line">.box-table .box-center &#123;</span><br><span class="line">  width: 50%;</span><br><span class="line">  margin: 0 auto;</span><br><span class="line">&#125;</span><br><span class="line">.container .box-center&#123;</span><br><span class="line">  background: #BBB;</span><br><span class="line">&#125;</span><br><span class="line">.box-center .title &#123;</span><br><span class="line">  padding: 0;</span><br><span class="line">  margin: 0 0 .5em;</span><br><span class="line">  line-height: 1em;</span><br><span class="line">&#125;</span><br><span class="line">.box-center&#123;</span><br><span class="line">  color:#fff;</span><br><span class="line">  padding: 20px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <p>参考资料：<br><a href="http://codepen.io/shshaw/full/gEiDt" target="_blank" rel="external">http://codepen.io/shshaw/full/gEiDt</a></p>
-</span>
+
       
     </div>
 
@@ -360,21 +379,19 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
   </div>
 
 
-        </div>
+          </div>
+          
 
-        
 
-
-        
+          
   <div class="comments" id="comments">
     
   </div>
 
 
-      </div>
-
-      
+        </div>
         
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -402,10 +419,12 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
 
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="https://avatars1.githubusercontent.com/u/32269?v=3&s=460" alt="Niles.Lee" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="https://avatars1.githubusercontent.com/u/32269?v=3&s=460"
+               alt="Niles.Lee" />
           <p class="site-author-name" itemprop="name">Niles.Lee</p>
+          <p class="site-description motion-element" itemprop="description">Live a good life，一个乐观、对理想有着执着追求的人。</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">Live a good life，一个乐观、对理想有着执着追求的人。</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -443,7 +462,7 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/html51" target="_blank" rel="external nofollow">
+                <a href="https://github.com/html51" target="_blank">
                   
                     <i class="fa fa-globe"></i> github
                   
@@ -485,7 +504,8 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -501,13 +521,13 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io" rel="external nofollow">Hexo</a> 强力驱动
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
   主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow">
-    NexT.Mist
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
   </a>
 </div>
 
@@ -519,39 +539,48 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
     <div class="back-to-top"></div>
   </div>
 
+  
+
+
+  
+
+
+
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  
-  
-
-  
-    
-    
-
-  
-
-
-  
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  
-  
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.0"></script>
 
 <script type="text/javascript" id="sidebar.toc.highlight">
   $(document).ready(function () {
@@ -685,7 +714,7 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
 
     $('.post-toc a').on('click', function (e) {
       e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
       var offset = $(targetSelector).offset().top;
       hasVelocity ?
         html.velocity('stop').velocity('scroll', {
@@ -698,11 +727,12 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
     });
 
     // Expand sidebar on post detail page by default, when post has a toc.
-    motionMiddleWares.sidebar = function () {
+    NexT.motion.middleWares.sidebar = function () {
       var $tocContent = $('.post-toc-content');
+
       if (CONFIG.sidebar === 'post') {
         if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          displaySidebar();
+          NexT.utils.displaySidebar();
         }
       }
     };
@@ -711,13 +741,27 @@ html123456&amp;lt;div class=&quot;container&quot;&amp;gt;  &amp;lt;div class=&qu
 
 
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
+
+
+
+  
+
+
+
+  
+
+
 
   
   
 
   
   
+
 
 </body>
 </html>

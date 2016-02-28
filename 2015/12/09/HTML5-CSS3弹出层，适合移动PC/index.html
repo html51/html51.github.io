@@ -1,5 +1,11 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -32,7 +38,7 @@
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="HTML5,css3,移动,弹出层," />
@@ -46,7 +52,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
 
 
 
@@ -91,10 +97,16 @@ html12345678910111213141516171819202122232425262728293">
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: 'post',
-    motion: true
+    scheme: 'Pisces',
+    sidebar: '[object Object]',
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
@@ -103,15 +115,6 @@ html12345678910111213141516171819202122232425262728293">
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
@@ -129,7 +132,12 @@ html12345678910111213141516171819202122232425262728293">
 
 
 
-  <div class="container one-column page-post-detail">
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -213,6 +221,7 @@ html12345678910111213141516171819202122232425262728293">
 
       
       
+      
     </ul>
   
 
@@ -224,8 +233,9 @@ html12345678910111213141516171819202122232425262728293">
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
@@ -256,7 +266,10 @@ html12345678910111213141516171819202122232425262728293">
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2015-12-09T23:12:45+08:00" content="2015-12-09">
               2015-12-09
             </time>
@@ -264,7 +277,11 @@ html12345678910111213141516171819202122232425262728293">
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/HTML5/" itemprop="url" rel="index">
@@ -285,18 +302,20 @@ html12345678910111213141516171819202122232425262728293">
 
           
 
+          
+          
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <span itemprop="articleBody"><p>随着CSS3的特性越来越完善和标准化，给开发人员在日常的开发过程中带来了非常方便。而且和javascript相比，达到了相同的效果。这次通过CSS3来实现一个弹窗层效果，方便日后再项目的开发中，提高效率。</p>
+        <p>随着CSS3的特性越来越完善和标准化，给开发人员在日常的开发过程中带来了非常方便。而且和javascript相比，达到了相同的效果。这次通过CSS3来实现一个弹窗层效果，方便日后再项目的开发中，提高效率。</p>
 <blockquote>
 <ul>
 <li>项目当中经常会有弹出层的需求</li>
@@ -308,7 +327,7 @@ html12345678910111213141516171819202122232425262728293">
 <a id="more"></a>
 <h4 id="demo-css"><strong>demo.css</strong></h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br></pre></td><td class="code"><pre><span class="line">html, body, div, span, applet, object, iframe,</span><br><span class="line">h1, h2, h3, h4, h5, h6, p, blockquote, pre,</span><br><span class="line">a, abbr, acronym, address, big, cite, code,</span><br><span class="line">del, dfn, em, img, ins, kbd, q, s, samp,</span><br><span class="line">small, strike, strong, sub, sup, tt, var,</span><br><span class="line">b, u, i, center,</span><br><span class="line">dl, dt, dd, ol, ul, li,</span><br><span class="line">fieldset, form, label, legend,</span><br><span class="line">table, caption, tbody, tfoot, thead, tr, th, td,</span><br><span class="line">article, aside, canvas, details, embed, </span><br><span class="line">figure, figcaption, footer, header, hgroup, </span><br><span class="line">menu, nav, output, ruby, section, summary,</span><br><span class="line">time, mark, audio, video &#123;</span><br><span class="line">	margin: 0;</span><br><span class="line">	padding: 0;</span><br><span class="line">	border: 0;</span><br><span class="line">	font-size: 100%;</span><br><span class="line">	font: inherit;</span><br><span class="line">	vertical-align: baseline;</span><br><span class="line">&#125;</span><br><span class="line">body &#123;</span><br><span class="line">	line-height: 1;</span><br><span class="line">&#125;</span><br><span class="line">ol, ul &#123;</span><br><span class="line">	list-style: none;</span><br><span class="line">&#125;</span><br><span class="line">blockquote, q &#123;</span><br><span class="line">	quotes: none;</span><br><span class="line">&#125;</span><br><span class="line">blockquote:before, blockquote:after,</span><br><span class="line">q:before, q:after &#123;</span><br><span class="line">	content: '';</span><br><span class="line">	content: none;</span><br><span class="line">&#125;</span><br><span class="line">table &#123;</span><br><span class="line">	border-collapse: collapse;</span><br><span class="line">	border-spacing: 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/********* CLEARFIX *********/</span><br><span class="line">.cf:before,</span><br><span class="line">.cf:after &#123;</span><br><span class="line">    content:"";</span><br><span class="line">    display:table;</span><br><span class="line">&#125;</span><br><span class="line">.cf:after &#123;</span><br><span class="line">    clear:both;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/******** DEMO STYLES ********/</span><br><span class="line">.container &#123;</span><br><span class="line">	margin:0 auto;</span><br><span class="line">	width:960px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.btn &#123;</span><br><span class="line">	background-color: #f6f6f6;</span><br><span class="line">	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(246, 246, 246)), to(rgb(225, 225, 225)));</span><br><span class="line">	background-image: -webkit-linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));</span><br><span class="line">	background-image: -moz-linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));</span><br><span class="line">	background-image: -o-linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));</span><br><span class="line">	background-image: -ms-linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));</span><br><span class="line">	background-image: linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));</span><br><span class="line">	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f6f6f6', EndColorStr='#e1e1e1');</span><br><span class="line">	border: 1px solid #ccc;</span><br><span class="line">	color:#555;</span><br><span class="line">	display:inline-block;</span><br><span class="line">	padding:5px 15px;</span><br><span class="line">	text-decoration:none;</span><br><span class="line">	text-shadow:0 2px rgba(255,255,255,.9);</span><br><span class="line">	border-radius:20px;</span><br><span class="line">	-moz-border-radius:20px;</span><br><span class="line">	-webkit-border-radius:20px;</span><br><span class="line">	box-shadow:0 1px rgba(0,0,0,.35);</span><br><span class="line">	-moz-box-shadow:0 1px rgba(0,0,0,.35);</span><br><span class="line">	-webkit-box-shadow:0 1px rgba(0,0,0,.35);</span><br><span class="line">&#125;</span><br><span class="line">	.btn:active &#123;</span><br><span class="line">		background-color: #f6f6f6;</span><br><span class="line">		background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(246, 246, 246)), to(rgb(225, 225, 225)));</span><br><span class="line">		background-image: -webkit-linear-gradient(bottom, rgb(246, 246, 246), rgb(225, 225, 225));</span><br><span class="line">		background-image: -moz-linear-gradient(bottom, rgb(246, 246, 246), rgb(225, 225, 225));</span><br><span class="line">		background-image: -o-linear-gradient(bottom, rgb(246, 246, 246), rgb(225, 225, 225));</span><br><span class="line">		background-image: -ms-linear-gradient(bottom, rgb(246, 246, 246), rgb(225, 225, 225));</span><br><span class="line">		background-image: linear-gradient(bottom, rgb(246, 246, 246), rgb(225, 225, 225));</span><br><span class="line">		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f6f6f6', EndColorStr='#e1e1e1');</span><br><span class="line">	&#125;</span><br><span class="line">	.btn.go &#123;</span><br><span class="line">		background-color: #3dda38;</span><br><span class="line">		background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(61, 218, 56)), to(rgb(39, 187, 63)));</span><br><span class="line">		background-image: -webkit-linear-gradient(top, rgb(61, 218, 56), rgb(39, 187, 63));</span><br><span class="line">		background-image: -moz-linear-gradient(top, rgb(61, 218, 56), rgb(39, 187, 63));</span><br><span class="line">		background-image: -o-linear-gradient(top, rgb(61, 218, 56), rgb(39, 187, 63));</span><br><span class="line">		background-image: -ms-linear-gradient(top, rgb(61, 218, 56), rgb(39, 187, 63));</span><br><span class="line">		background-image: linear-gradient(top, rgb(61, 218, 56), rgb(39, 187, 63));</span><br><span class="line">		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,EndColorStr='#3dda38', StartColorStr='#27bb3f');</span><br><span class="line">		border: 1px solid #21ac1c;</span><br><span class="line">		color:#fff;</span><br><span class="line">		text-shadow:0 -1px rgba(0,0,0,.4);</span><br><span class="line">	&#125;</span><br><span class="line">		.btn.go:active &#123;</span><br><span class="line">			background-color: #3dda38;</span><br><span class="line">			background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(61, 218, 56)), to(rgb(39, 187, 63)));</span><br><span class="line">			background-image: -webkit-linear-gradient(bottom, rgb(61, 218, 56), rgb(39, 187, 63));</span><br><span class="line">			background-image: -moz-linear-gradient(bottom, rgb(61, 218, 56), rgb(39, 187, 63));</span><br><span class="line">			background-image: -o-linear-gradient(bottom, rgb(61, 218, 56), rgb(39, 187, 63));</span><br><span class="line">			background-image: -ms-linear-gradient(bottom, rgb(61, 218, 56), rgb(39, 187, 63));</span><br><span class="line">			background-image: linear-gradient(bottom, rgb(61, 218, 56), rgb(39, 187, 63));</span><br><span class="line">			filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,EndColorStr='#3dda38', StartColorStr='#27bb3f');</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">body &#123;</span><br><span class="line">	background:#eee;</span><br><span class="line">	font: 16px/24px Helvetica, sans-serif;</span><br><span class="line">	padding: 30px 0;</span><br><span class="line">&#125;</span><br><span class="line">p &#123;</span><br><span class="line">	margin-bottom:20px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">h2 &#123;</span><br><span class="line">	font:600 27px/33px Helvetica, sans-serif;</span><br><span class="line">	margin-bottom:20px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="modal-css"><strong>modal.css</strong></h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">/* Normal styles for the modal */</span><br><span class="line">#modal &#123;</span><br><span class="line">	left:50%;</span><br><span class="line">	margin:-250px 0 0 -40%;</span><br><span class="line">	opacity: 0;</span><br><span class="line">	position:absolute;</span><br><span class="line">	top:-50%;</span><br><span class="line">	visibility: hidden;</span><br><span class="line">	width:80%;</span><br><span class="line">	box-shadow:0 3px 7px rgba(0,0,0,.25);</span><br><span class="line">	box-sizing:border-box;</span><br><span class="line">	transition: all 0.4s ease-in-out;</span><br><span class="line">	-moz-transition: all 0.4s ease-in-out;</span><br><span class="line">	-webkit-transition: all 0.4s ease-in-out;</span><br><span class="line">&#125;</span><br><span class="line">	/* Make the modal appear when targeted */</span><br><span class="line">	#modal:target &#123;</span><br><span class="line">		opacity: 1;</span><br><span class="line">		top:50%;</span><br><span class="line">		visibility: visible;</span><br><span class="line">	&#125;</span><br><span class="line">#modal .header,#modal .footer &#123;</span><br><span class="line">	border-bottom: 1px solid #e7e7e7;</span><br><span class="line">	border-radius: 5px 5px 0 0;</span><br><span class="line">&#125;</span><br><span class="line">	#modal .footer &#123;</span><br><span class="line">		border:none;</span><br><span class="line">		border-top: 1px solid #e7e7e7;</span><br><span class="line">		border-radius: 0 0 5px 5px;</span><br><span class="line">	&#125;</span><br><span class="line">#modal h2 &#123;</span><br><span class="line">	margin:0;</span><br><span class="line">&#125;</span><br><span class="line">#modal .btn &#123;</span><br><span class="line">	float:right;</span><br><span class="line">&#125;</span><br><span class="line">#modal .copy,#modal .header, #modal .footer &#123;</span><br><span class="line">	padding:15px;</span><br><span class="line">&#125;</span><br><span class="line">.modal-content &#123;</span><br><span class="line">	background: #f7f7f7;</span><br><span class="line">	position: relative;</span><br><span class="line">	z-index: 20;</span><br><span class="line">	border-radius:5px;</span><br><span class="line">&#125;</span><br><span class="line">#modal .copy &#123;</span><br><span class="line">	background: #fff;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#modal .overlay &#123;</span><br><span class="line">	background-color: #000;</span><br><span class="line">	background: rgba(0,0,0,.5);</span><br><span class="line">	height: 100%;</span><br><span class="line">	left: 0;</span><br><span class="line">	position: fixed;</span><br><span class="line">	top: 0;</span><br><span class="line">	width: 100%;</span><br><span class="line">	z-index: 10;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</span>
+
       
     </div>
 
@@ -360,21 +379,19 @@ html12345678910111213141516171819202122232425262728293">
   </div>
 
 
-        </div>
+          </div>
+          
 
-        
 
-
-        
+          
   <div class="comments" id="comments">
     
   </div>
 
 
-      </div>
-
-      
+        </div>
         
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -402,10 +419,12 @@ html12345678910111213141516171819202122232425262728293">
 
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="https://avatars1.githubusercontent.com/u/32269?v=3&s=460" alt="Niles.Lee" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="https://avatars1.githubusercontent.com/u/32269?v=3&s=460"
+               alt="Niles.Lee" />
           <p class="site-author-name" itemprop="name">Niles.Lee</p>
+          <p class="site-description motion-element" itemprop="description">Live a good life，一个乐观、对理想有着执着追求的人。</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">Live a good life，一个乐观、对理想有着执着追求的人。</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -443,7 +462,7 @@ html12345678910111213141516171819202122232425262728293">
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/html51" target="_blank" rel="external nofollow">
+                <a href="https://github.com/html51" target="_blank">
                   
                     <i class="fa fa-globe"></i> github
                   
@@ -485,7 +504,8 @@ html12345678910111213141516171819202122232425262728293">
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -501,13 +521,13 @@ html12345678910111213141516171819202122232425262728293">
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io" rel="external nofollow">Hexo</a> 强力驱动
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
   主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow">
-    NexT.Mist
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
   </a>
 </div>
 
@@ -519,39 +539,48 @@ html12345678910111213141516171819202122232425262728293">
     <div class="back-to-top"></div>
   </div>
 
+  
+
+
+  
+
+
+
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  
-  
-
-  
-    
-    
-
-  
-
-
-  
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  
-  
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.0"></script>
 
 <script type="text/javascript" id="sidebar.toc.highlight">
   $(document).ready(function () {
@@ -685,7 +714,7 @@ html12345678910111213141516171819202122232425262728293">
 
     $('.post-toc a').on('click', function (e) {
       e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
       var offset = $(targetSelector).offset().top;
       hasVelocity ?
         html.velocity('stop').velocity('scroll', {
@@ -698,11 +727,12 @@ html12345678910111213141516171819202122232425262728293">
     });
 
     // Expand sidebar on post detail page by default, when post has a toc.
-    motionMiddleWares.sidebar = function () {
+    NexT.motion.middleWares.sidebar = function () {
       var $tocContent = $('.post-toc-content');
+
       if (CONFIG.sidebar === 'post') {
         if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          displaySidebar();
+          NexT.utils.displaySidebar();
         }
       }
     };
@@ -711,13 +741,27 @@ html12345678910111213141516171819202122232425262728293">
 
 
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
+
+
+
+  
+
+
+
+  
+
+
 
   
   
 
   
   
+
 
 </body>
 </html>
