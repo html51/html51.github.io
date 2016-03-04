@@ -219,6 +219,115 @@
 
     
     
+      
+      
+
+      
+    
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/01/21/Animated pie chart/" itemprop="url">
+                  Animated pie chart
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-01-21T21:13:45+08:00" content="2016-01-21">
+              2016-01-21
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/csssecrets/" itemprop="url" rel="index">
+                    <span itemprop="name">csssecrets</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="HTML"><strong>HTML</strong></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"pie"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="CSS"><strong>CSS</strong></h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * Animated pie chart</span><br><span class="line"> */</span></span><br><span class="line"></span><br><span class="line"><span class="selector-class">.pie</span> &#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100px</span>; <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">background</span>: yellowgreen;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(to right, transparent <span class="number">50%</span>, currentColor <span class="number">0</span>);</span><br><span class="line">	<span class="attribute">color</span>: <span class="number">#655</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.pie</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">	<span class="attribute">display</span>: block;</span><br><span class="line">	<span class="attribute">margin-left</span>: <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">0</span> <span class="number">100%</span> <span class="number">100%</span> <span class="number">0</span> / <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">background-color</span>: inherit;</span><br><span class="line">	<span class="attribute">transform-origin</span>: left;</span><br><span class="line">	<span class="attribute">animation</span>: spin <span class="number">3s</span> linear infinite, bg <span class="number">6s</span> step-end infinite;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@<span class="keyword">keyframes</span> spin &#123;</span><br><span class="line">	<span class="selector-tag">to</span> &#123; <span class="attribute">transform</span>: <span class="built_in">rotate</span>(.<span class="number">5turn</span>); &#125;</span><br><span class="line">&#125;</span><br><span class="line">@<span class="keyword">keyframes</span> bg &#123;</span><br><span class="line">	50% &#123; <span class="attribute">background</span>: currentColor; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
 
     
       
@@ -451,111 +560,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/01/20/Adjusting tabs/" itemprop="url">
-                  Adjusting tabs
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-20T21:03:45+08:00" content="2016-01-20">
-              2016-01-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/csssecrets/" itemprop="url" rel="index">
-                    <span itemprop="name">csssecrets</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h4 id="HTML"><strong>HTML</strong></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span>&gt;</span>// Default tab size</span><br><span class="line">while (true) &#123;</span><br><span class="line">	var d = new Date();</span><br><span class="line">	if (d.getDate()==1 &amp;amp;&amp;amp;</span><br><span class="line">	    d.getMonth()==3) &#123;</span><br><span class="line">		alert("TROLOLOL");</span><br><span class="line">	&#125;</span><br><span class="line">&#125;<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span>&gt;</span>// tab-size: 2;</span><br><span class="line">while (true) &#123;</span><br><span class="line">	var d = new Date();</span><br><span class="line">	if (d.getDate()==1 &amp;amp;&amp;amp;</span><br><span class="line">	    d.getMonth()==3) &#123;</span><br><span class="line">		alert("TROLOLOL");</span><br><span class="line">	&#125;</span><br><span class="line">&#125;<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span>&gt;</span>// tab-size: 4;</span><br><span class="line">while (true) &#123;</span><br><span class="line">	var d = new Date();</span><br><span class="line">	if (d.getDate()==1 &amp;amp;&amp;amp;</span><br><span class="line">	    d.getMonth()==3) &#123;</span><br><span class="line">		alert("TROLOLOL");</span><br><span class="line">	&#125;</span><br><span class="line">&#125;<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span>&gt;</span>// tab-size: 0;</span><br><span class="line">while (true) &#123;</span><br><span class="line">	var d = new Date();</span><br><span class="line">	if (d.getDate()==1 &amp;amp;&amp;amp;</span><br><span class="line">	    d.getMonth()==3) &#123;</span><br><span class="line">		alert("TROLOLOL");</span><br><span class="line">	&#125;</span><br><span class="line">&#125;<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/20/Adjusting tabs/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2016/01/20/Scrolling hints/" itemprop="url">
                   Scrolling hints
                 </a>
@@ -661,8 +665,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/01/20/重新定义管理：合弄制改变世界/" itemprop="url">
-                  重新定义管理：合弄制改变世界
+                <a class="post-title-link" href="/2016/01/20/Adjusting tabs/" itemprop="url">
+                  Adjusting tabs
                 </a>
               
             
@@ -675,7 +679,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-20T00:04:45+08:00" content="2016-01-20">
+            <time itemprop="dateCreated" datetime="2016-01-20T21:03:45+08:00" content="2016-01-20">
               2016-01-20
             </time>
           </span>
@@ -689,8 +693,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/书籍/" itemprop="url" rel="index">
-                    <span itemprop="name">书籍</span>
+                  <a href="/categories/csssecrets/" itemprop="url" rel="index">
+                    <span itemprop="name">csssecrets</span>
                   </a>
                 </span>
 
@@ -721,10 +725,9 @@
 
       
         
-          <p><img src="http://img13.360buyimg.com/n1/jfs/t2017/59/666139325/489739/4d8d0efc/5620c08cN99fabb5e.jpg" alt=""></p>
-<h4 id="内容简介">内容简介</h4><p>还没听说过合弄制？你一定会听说的。终于，迎来了一本合弄制创建者的著作，讲解了这一公司经营方式的革命性新系统及其实施方法。<br>　　今天的商界，情况瞬息万变。但在绝大多数组织中，具有资格响应变化的人们却几乎都没有权力去做出改变。相反，他们不得不遵守那些由领导们设立的亘古不变的战略，而且这些领导们仍然相信“预测和控制”才是有效管理的关键。<br>　　合弄制向你展示了怎样让组织中工作的每一个人都成为一名领导，并最大限度地实现敏捷和灵活。这个系统让组织能够一天天地自我进化，从而适应不断变化的市场。<br>　　觉得这听起来挺混乱的？其实恰好相反。合弄制是一个高度自我组织的系统，根据人们所承担的工作（他们的角色），而非所拥有的头衔（他们的职位）来赋予人们决策的权力。其结果是：<br>　　沟通有效<br>　　会议高效<br>　　少一些官僚作风，少一些障碍<br>　　职权规定清清楚楚<br>　　首席执行官能够英雄般地预见和解决所有问题的时代即使真的存在过，也已成为过去。今天，世界上最灵活、受目标驱动以及具备前瞻思维的公司都在采用合弄制。<br>　　《重新定义管理》中，布赖恩·罗伯逊向你揭示了传统商业的问题——同时也授予你许多种工具。使用这些工具，便能重启你的组织，并奇迹般地改善你的工作以及完成工作的方式。<br>
+          <h4 id="HTML"><strong>HTML</strong></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span>&gt;</span>// Default tab size</span><br><span class="line">while (true) &#123;</span><br><span class="line">	var d = new Date();</span><br><span class="line">	if (d.getDate()==1 &amp;amp;&amp;amp;</span><br><span class="line">	    d.getMonth()==3) &#123;</span><br><span class="line">		alert("TROLOLOL");</span><br><span class="line">	&#125;</span><br><span class="line">&#125;<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span>&gt;</span>// tab-size: 2;</span><br><span class="line">while (true) &#123;</span><br><span class="line">	var d = new Date();</span><br><span class="line">	if (d.getDate()==1 &amp;amp;&amp;amp;</span><br><span class="line">	    d.getMonth()==3) &#123;</span><br><span class="line">		alert("TROLOLOL");</span><br><span class="line">	&#125;</span><br><span class="line">&#125;<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span>&gt;</span>// tab-size: 4;</span><br><span class="line">while (true) &#123;</span><br><span class="line">	var d = new Date();</span><br><span class="line">	if (d.getDate()==1 &amp;amp;&amp;amp;</span><br><span class="line">	    d.getMonth()==3) &#123;</span><br><span class="line">		alert("TROLOLOL");</span><br><span class="line">	&#125;</span><br><span class="line">&#125;<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span>&gt;</span>// tab-size: 0;</span><br><span class="line">while (true) &#123;</span><br><span class="line">	var d = new Date();</span><br><span class="line">	if (d.getDate()==1 &amp;amp;&amp;amp;</span><br><span class="line">	    d.getMonth()==3) &#123;</span><br><span class="line">		alert("TROLOLOL");</span><br><span class="line">	&#125;</span><br><span class="line">&#125;<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/20/重新定义管理：合弄制改变世界/#more" rel="contents">
+            <a class="btn" href="/2016/01/20/Adjusting tabs/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -792,21 +795,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">分类</span>
               
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">28</span>
+              <span class="site-state-item-count">29</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
