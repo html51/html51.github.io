@@ -1,0 +1,49 @@
+﻿title: Animated pie chart
+date: 2016-01-21 21:13:45
+categories:
+- csssecrets
+tags: [CSS3,csssecrets]
+
+---
+
+#### **HTML**
+``` html
+<div class="pie"></div>
+```
+
+#### **CSS**
+``` css
+/**
+ * Animated pie chart
+ */
+
+.pie {
+	width: 100px; height: 100px;
+	border-radius: 50%;
+	background: yellowgreen;
+	background-image: linear-gradient(to right, transparent 50%, currentColor 0);
+	color: #655;
+}
+
+.pie::before {
+	content: '';
+	display: block;
+	margin-left: 50%;
+	height: 100%;
+	border-radius: 0 100% 100% 0 / 50%;
+	background-color: inherit;
+	transform-origin: left;
+	animation: spin 3s linear infinite, bg 6s step-end infinite;
+}
+
+@keyframes spin {
+	to { transform: rotate(.5turn); }
+}
+@keyframes bg {
+	50% { background: currentColor; }
+}
+```
+
+
+
+

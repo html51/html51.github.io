@@ -1,0 +1,118 @@
+# Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Niles.Lee's Blog
+subtitle: Live a good life
+description: Live a good life，一个乐观、对理想有着执着追求的人。
+author: Niles.Lee
+language: zh-Hans
+timezone:
+
+# Avatar
+avatar: https://avatars1.githubusercontent.com/u/32269?v=3&s=460
+
+# Baidu_analytics
+baidu_analytics: 3d9a19a5272a486159c1099599783d1e
+
+
+# Since
+since: 2015
+
+# Social link
+social:
+  github: https://github.com/html51
+  #twitter: https://twitter.com/your-user-name
+  #weibo: http://weibo.com/your-user-name
+  #douban: http://douban.com/people/your-user-name
+  #zhihu: http://www.zhihu.com/people/your-user-name
+
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://yoursite.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Archives 默认值为2，这里都修改为1，相应页面就只会列出标题，而非全文
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 1
+category: 1
+tag: 1
+
+# hexo sitemap网站地图
+sitemap:
+path: sitemap.xml
+baidusitemap:
+path: baidusitemap.xml
+
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: true
+  tab_replace:
+
+# Server 不修改
+## Hexo uses Connect as a server
+## You can customize the logger format as defined in
+## http://www.senchalabs.org/connect/logger.html
+port: 4000
+logger: false
+logger_format:  
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 5
+pagination_dir: page
+
+# Extensions
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
+theme: Next
+
+# Deployment
+## Docs: http://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repository: https://github.com/html51/html51.github.io.git
+  branch: master
